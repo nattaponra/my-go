@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/nattaponra/my-go/concurrency"
 )
 
@@ -14,8 +12,11 @@ func main() {
 	// go concurrency.Ponger(c)
 	// go concurrency.Printer(c)
 
-	concurrency.Select()
+	//Select
+	//concurrency.Select()
 
-	var input string
-	fmt.Scanln(&input)
+	//Bugffer
+	concurrency.FindMaximumSize()
+	// var input string
+	// fmt.Scanln(&input)
 }
