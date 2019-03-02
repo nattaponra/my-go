@@ -7,8 +7,9 @@ import (
 )
 
 func main() {
-	var c chan int = make(chan int)
+	var c chan string = make(chan string)
 	go concurrency.Pinger(c)
+	go concurrency.Ponger(c)
 	go concurrency.Printer(c)
 
 	var input string
